@@ -1,0 +1,170 @@
+.game_running_main {
+	width: 100%;
+	word-wrap: break-word;
+	position: relative;
+}
+
+.answers_block{
+	position: absolute;
+	top: 110%;
+	left: -16%;
+	border-radius: 100px 100px 0 0;
+	background: linear-gradient(0deg, #F9C591 60%, #FFF9C2 100%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 120%;
+	height: 75vh;
+	overflow: hidden auto;
+	padding: 5%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.user_icons_wrapper{
+	position: relative;
+	left: 35%;
+	top: 3%;
+	z-index: 99;
+
+	animation: 2s ease-in-out slideout;
+}
+.users_icons_left_side{
+	position: absolute;
+	left: -55%;
+	top: 0%;
+}
+.users_icons_right_side{
+	position: absolute;
+	left: 61%;
+	top: 0%;
+}
+
+
+.answers_wrapper{
+	margin: 0 auto;
+	width: 65%;
+	text-align: center;
+	overflow: hidden auto;
+}
+.answers_content{
+	display: flex;
+	flex-direction: column;
+	gap: 0.65em;
+	color: #9A2D26;
+	font-weight: 700;
+	font-size: 1.35em;
+	padding: 0 5%;
+	margin-bottom: 3%;
+	cursor: pointer;
+}
+
+
+.answer{
+	width: 100%;
+}
+.answer_onClick{
+	background:  url('../../../assets/cloud.png') center/contain no-repeat;
+	box-sizing: content-box;
+}
+.answer_onClick:before{
+	
+}
+.answer_descr{}
+
+.user_avatar{
+	width: 25px;
+	height: 25px;
+	object-fit: cover;
+	text-align: right;
+	float: right;
+	margin: 0 0 0 auto; 
+}
+
+
+.timer{
+	position: fixed;
+	left: 50%;
+	bottom: 17%;
+	transform: translateX(-50%);
+	z-index: 999;
+
+	line-height: 100%;
+	font-weight: 700;
+	font-size: 4em;
+	color: #34495E;
+	text-align: center;
+}
+
+
+.footer{
+	margin: 0 auto;
+	padding: 0 0 5% 0;
+	width: 75%;
+	text-align: center;
+}
+.answer_secr{
+	font-weight: 700;
+	color: #FF0000;
+	font-size: 1.4em;
+	margin-bottom: 3%;
+}
+.btn_block{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto;
+}
+.btn_skip{
+	position: relative;
+	background: url("../../../assets/btn-skip.png") center 50%/100% no-repeat;
+	background-color: white; 
+	line-height: 160%;
+	font-size: 1.85em;
+	background-size: 100% 100%;
+	width: 40%;
+	padding-left: 16%;
+	color: #D2B100;
+	border-radius: 25px;
+}
+ .beer{
+	position: absolute;
+	top: -33%;
+	left: 8%;
+	background: url("../../../assets/beer-icon.png") no-repeat;
+	z-index: 9999;
+	width: 50px;
+	height: 100px;
+}
+.btn_ok{
+	text-transform: uppercase;
+	line-height: 160%;
+	font-size: 2em;
+	background: url("../../../assets/btn.png") no-repeat;
+	background-size: 100% 100%;
+	border-radius: 16px;
+	background-color: white; 
+	width: 40%;
+	color: #17A085;
+}
+
+@keyframes slideout {
+	from {
+		margin-bottom: 200%;
+	 }
+	 to {
+		margin-bottom: 0%;
+	 }
+}
+
+
+@media screen and (min-width: 410px){
+	.answers_content{
+		font-size: 1.55em;
+	}
+}
+@media screen and (max-width: 380px){
+	.answers_content{
+		font-size: 1.35em;
+	}
+}

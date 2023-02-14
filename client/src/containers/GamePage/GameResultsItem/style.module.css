@@ -1,0 +1,58 @@
+.results_main{
+	width: 100%;
+	height: 100%;
+}
+
+.results_body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	height: 100%;
+}
+
+h2{
+	color: #FF0000;
+}
+
+.custom_image_list{
+	width: 100%;
+	transition: transform 1s ease-in-out 0s;
+	animation: scaleEffect 0.7s;
+}
+
+.answer{
+	color: #444E3F;
+	font-family: ALSScriptus, sans-serif !important;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.text_custom{
+	color: #FF0000;
+	font-weight: 700;
+	font-size: 1.4em;
+	margin: 2% 0;
+}
+.user_image_multiplayer{
+	width: 100%;
+}
+.beer {
+		position: absolute;
+		top: 50%;
+		left: 8%;
+		background: url("../../../assets/beer-icon.png") no-repeat;
+		z-index: 9999;
+		width: 40px;
+		height: 850px;
+}
+
+@keyframes scaleEffect {
+	0% {
+		scale: 0%;
+	}
+	100% {
+	   scale: 100%;
+	}
+ }

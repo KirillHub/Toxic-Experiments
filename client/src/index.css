@@ -1,0 +1,48 @@
+@font-face {
+  font-family: ALSScriptus;
+  src: url('./fonts/ALSScripticus.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url('./fonts/ALSScripticus-Bold.ttf');
+  font-weight: 800;
+}
+
+html{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;    
+
+  	font-family: ALSScriptus, sans-serif !important;
+  	height: 100%;
+  	background: red;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: var(--app-height);
+
+  background: url("./assets/back.png") no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3 {margin:0; padding:0}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --app-height: 100%;
+  --pink1: #F84E93;
+  --pink2: #F08AA9;
+
+  --green1: #00FFA3;
+  --green2: #70FFC2;
+}

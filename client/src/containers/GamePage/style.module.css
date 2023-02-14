@@ -1,0 +1,153 @@
+.container{
+    box-sizing: border-box;
+    width: 90%;
+    height: 95%;
+    position: relative;
+    padding: 1% 2.5% 3% 2.5%;
+
+    background: white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: align-start;
+    gap: 10px;
+}
+
+.players_list_avatars{
+    display: flex;
+    overflow: auto hidden;
+    max-width: 300px;
+    scrollbar-width: thin;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.players_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.players_list_avatars .current{
+    animation: 0.9s ease-in-out pulse infinite;
+}
+
+.players_list h1, .question h1, .answers h1{
+    color: #FF0000;
+    margin: 5px 0px;
+    font-size: 24px;
+}
+
+.question h1, .answers h1{
+    text-align: center;
+}
+
+.question{
+    font-size: 24px;
+	 text-align: center;
+}
+
+.question .content{
+    max-height: 110px;
+    overflow: hidden auto;
+
+    scrollbar-width: thin;
+	 padding: 0 3%;
+
+	 animation: 1.5s ease-in-out slidein;
+	 /* animation-delay: 1s; */
+}
+
+.answers{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.answers .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+
+    width: 80%;
+}
+
+.answers .content_grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.waiting{
+    text-align: center;
+}
+
+.result_buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.correct{
+    background-color: #0B997B !important;
+    color: white;
+}
+
+.incorrect{
+    background-color: #F84E93 !important;
+    color: white;
+}
+
+.results{
+    width: 100%;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+}
+
+.round{
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.drink_list{
+	padding: 1.25%;
+	text-align: center;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 1px 1px #cccccc;
+    }
+    100% {
+        box-shadow: 0px 0px 8px 5px #cccccc;
+    }
+}
+
+@keyframes slidein {
+	from {
+		scale: 0%;
+	 }
+  
+	 to {
+		scale: 100%;
+	 }
+}

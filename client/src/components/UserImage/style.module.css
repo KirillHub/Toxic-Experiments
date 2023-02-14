@@ -1,0 +1,36 @@
+.current{
+	content: '';
+	padding: 8%;
+	border-radius: 2em;
+	animation: 0.9s ease-in-out pulse infinite;
+}
+
+.custom_image_list{
+	position: fixed; 
+	width: 17.5%;
+	rotate: 0deg;
+
+	transition: transform 1s ease-in-out 0s;
+	animation: flip 2s;
+}
+.custom_image{
+}
+
+
+@keyframes pulse {
+	0% {
+		 box-shadow: 0px 0px 1px 1px #d24040c9;
+	}
+	100% {
+		 box-shadow: 0px 0px 11px 10px #d675758c;
+	}
+}
+
+@keyframes flip {
+	0% {
+		transform: translateY(-430%);
+	}
+	100% {
+	   transform: translateX(0%);
+	}
+ }
